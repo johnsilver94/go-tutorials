@@ -1,0 +1,7 @@
+{
+	"line-length": false,
+	"no-inline-html": {
+		"allowed_elements": ["a", "div", "h1", "code", "p", "img"]
+	},
+	"first-line-heading": false
+}

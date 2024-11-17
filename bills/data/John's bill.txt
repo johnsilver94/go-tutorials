@@ -1,0 +1,7 @@
+Bill breakdown for:
+Pizza:                    ...15$ 
+Soup:                     ...10$ 
+Beer:                     ...5$ 
+Burger:                   ...7.49$ 
+Tip:                      ...7.50$ 
+Total:                    ...44.99$
