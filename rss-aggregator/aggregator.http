@@ -2,8 +2,57 @@
 
 
 ### Health check 
-GET {{baseUrl}}/healthz
+GET {{baseUrl}}/healthz HTTP/1.1
 
 
 ### Error
-GET {{baseUrl}}/error
+GET {{baseUrl}}/error HTTP/1.1
+
+
+### Create user
+POST {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
+
+### Get user
+GET {{baseUrl}}/users HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+
+
+### Create feed
+POST {{baseUrl}}/feeds HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+Content-Type: application/json
+
+{
+    "name": "John Blog 2",
+    "url": "https://john.blog/feed/2"
+}
+
+
+### Get feeds
+GET {{baseUrl}}/feeds HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+
+### Create feed follow
+POST {{baseUrl}}/feed_follows HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+Content-Type: application/json
+
+{
+    "feed_id": "7756e94f-b5d1-4b9d-a3f8-50096a7ad65f"
+}
+
+
+### Get feed follows
+GET {{baseUrl}}/feed_follows HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+
+
+### Delete feed follows
+@feedFollowId = 533e5035-0dfd-49d5-9284-3e831ff985e3
+DELETE  {{baseUrl}}/feed_follows/{{feedFollowId}} HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
