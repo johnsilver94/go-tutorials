@@ -1,0 +1,9 @@
+@baseUrl = http://localhost:8000/v1
+
+
+### Health check 
+GET {{baseUrl}}/healthz
+
+
+### Error
+GET {{baseUrl}}/error

@@ -1,6 +1,0 @@
-### Health check GET request
-GET http://localhost:8000/v1/healthz
-
-
-### Error GET request
-GET http://localhost:8000/v1/error
