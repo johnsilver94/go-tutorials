@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
-        "goroutines"
+        "godotenv",
+        "goroutines",
+        "healthz"
     ]
 }
