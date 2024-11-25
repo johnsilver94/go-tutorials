@@ -43,7 +43,7 @@ Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc
 Content-Type: application/json
 
 {
-    "feed_id": "7756e94f-b5d1-4b9d-a3f8-50096a7ad65f"
+    "feed_id": "346bea81-3249-479e-aa73-61440e4edd0a"
 }
 
 
@@ -53,6 +53,11 @@ Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc
 
 
 ### Delete feed follows
-@feedFollowId = 533e5035-0dfd-49d5-9284-3e831ff985e3
+@feedFollowId = 86ddab2c-a054-4e09-83ab-dc3562aae2d1
 DELETE  {{baseUrl}}/feed_follows/{{feedFollowId}} HTTP/1.1
+Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
+
+
+### Get user feed posts
+GET {{baseUrl}}/posts HTTP/1.1
 Authorization: ApiKey e655ae9df66acfccac91239defdbea219578cc3e1034be2f3a66ab04dc0b3d00
